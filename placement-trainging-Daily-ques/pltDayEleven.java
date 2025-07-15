@@ -14,9 +14,11 @@ isBasketEmpty() – Check if the basket is empty.
 
 displayFruits() – Display all fruits from top to bottom. */
 
-public class pltDayEleven {
+public class pltDayEleven 
+{
     
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         FruitBasket basket = new FruitBasket();
         
         basket.addFruit("Apple");
@@ -36,29 +38,38 @@ public class pltDayEleven {
         basket.displayFruits();
     }
 
-    static class FruitBasket {
+    static class FruitBasket 
+    {
         private java.util.Stack<String> stack;
 
-        public FruitBasket() {
+        public FruitBasket() 
+        {
             stack = new java.util.Stack<>();
         }
 
-        public void addFruit(String fruit) {
+        public void addFruit(String fruit) 
+        {
             stack.push(fruit);
         }
 
-        public String removeFruit() {
+        public String removeFruit() 
+        {
             if (!stack.isEmpty()) {
                 return stack.pop();
-            } else {
+            } 
+            else 
+            {
                 return "Basket is empty!";
             }
         }
 
         public String peekTopFruit() {
-            if (!stack.isEmpty()) {
+            if (!stack.isEmpty())
+             {
                 return stack.peek();
-            } else {
+            } 
+            else 
+            {
                 return "Basket is empty!";
             }
         }
@@ -68,11 +79,13 @@ public class pltDayEleven {
         }
 
         public void displayFruits() {
-            if (stack.isEmpty()) {
+            if (stack.isEmpty()) 
+            {
                 System.out.println("Basket is empty!");
                 return;
             }
-            for (String fruit : stack) {
+            for (String fruit : stack)
+             {
                 System.out.println(fruit);
             }
         }

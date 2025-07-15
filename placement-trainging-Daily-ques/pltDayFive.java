@@ -12,14 +12,15 @@ Test Case 2:
 Input: N=6
 Output: 21  */
 
-public class pltDayFive {
+public class pltDayFive 
+{
     
-    public static void main(String[] args) {
-        int N = 5; // Test Case 1
+    public static void main(String[] args) 
+    {
+        int N = 5; 
         
-        // int N = 6; // Test Case 2
-        
-        if (N < 1) {
+        if (N < 1) 
+        {
             System.out.println("N should be a positive integer. Returning 0.");
             System.out.println("Sum of first N natural numbers: " + 0);
             return;
@@ -30,8 +31,9 @@ public class pltDayFive {
         System.out.println("Sum of the first " + N + " natural numbers: " + sum);
     }
 
-    private static int sumOfNaturalNumbers(int n) {
-        return n * (n + 1) / 2; // Using the formula n(n+1)/2
+    private static int sumOfNaturalNumbers(int n) 
+    {
+        return n * (n + 1) / 2; 
     }
 
         
